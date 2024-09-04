@@ -1,0 +1,296 @@
+
+1. display list of odd and even value from list using stream
+
+2. get word and count in reverse order using stream
+
+3. design schema for patients management
+
+4. difference between Oracle and MsSQL
+
+5. when we use left join and Right join
+
+6. write query to swap two column column data, Table have column A and B move column A data to B and column column B data to A
+
+7. List out all the Spring Boot Annotations
+
+8. What is the difference between @Component and @Service
+
+9 What is @Configuration
+
+10. Java 8 Features
+----------------------------------------------------------------------------------------------
+
+1. hasmap internal working, write program for custom object as key to hasmap and explain behavoir for hashcode and equals
+ 
+2. linkedlist  implementation for custom object
+ 
+3. write program for insertion sort program
+ 
+4. connection pool need and requirements
+ 
+5. outofmemoryError and StackOverflow cause
+ 
+6. springboot embedded server and usage of starter dependencies
+ 
+7. find the second highest sal for person with different department in department wise collection
+ 
+8. there is million of records is their which collection you will be prefer and why
+Ans
+---
+Are you going to be doing many inserts with no sorting? Linked List
+Are you going to be doing a lot of lookups? HashMap/Dictionary
+Are you going to just have an unordered group of things? List and/or Array
+Do you not want duplicates? Set
+Do you not want duplicates, but want a fast lookup? HashSet
+Do you have an ordered List that is to be sorted by keys? TreeMap
+ 
+9. selection sort
+ 
+10. what happen if hash equal override as true
+
+11. a.data strucuture to sort the huge employee object based on id and id should be unique
+   b.why we should not use treeSet sorting the employee object
+   c.when im entering into the employee object into collection it should should be sorted internally how will you do it
+   
+12. which collection object is stores unique object and sorted format
+
+13. can we able to run the spring boot application without any server including embedded tomat server we should not use.
+
+14. what are all the properties we have pass inside the @Transactional annotation
+
+15. a.we have the controller that receiveing two object, these two i need to store in a two different database. in this case how you will manage the transaction. 
+   b.if my first db call gets failed how will you initiate the transaction for the second db call and how will you prioritize the transaction.
+   
+   
+1.Assume an Employee class with fields id,name,salary using the Stream API to get the name of employees with a salary greater than 20000
+2.What are different sorting technique. write the code for selection sort.
+3.Write a code Employee class with Id,firstName,lastName and override equals() in same class. then create employee object and put this in hashMap object.
+now analyse how many object has created. based on this they asked
+a)can we only overide equals() method.
+b)can we only override hashCode() method;
+c)in this case override equals() and made true for all objects.what will be the output.
+
+
+22/07
+-----
+1. Last program written and challenges faced
+2. What are the different sorting algorithms. Explain each
+3. Bubble sort using lambda
+4. Insertion sort for a list
+
+22/07 (Garud Prashant)
+----------------
+Round 1 :
+Write a program which gives user 2 options
+1.Enter a name
+2.Display a name
+This should run in a loop
+when user gives input 1:
+Code should prompt "Enter name"
+when user gives input 2:
+Code should return the last entered name and it should be deleted.
+Should implement it in stack implementation using arrays but not using Stack collection.
+ 
+Edge case:
+1. for input 1,if index greater than length of stack print message "Cannot enter name"
+2.for input 2,if index less 0 than print message "No names to display"
+
+23/07 (Garud Prashant)
+---------------
+1.We have 1million Employee objects. We have to get Employee by id. Which data structure is the best for fastest retrieval
+Ans:Trees
+2.What is checked exception and Runtime exception.Aren't all the exceptions basically runtime exceptions.?
+3.Suppose there is a method in DAO layer implementing exception handling. How the caller methods will know that that this method is throwing exception.
+4.How do you do Transaction Management in your project. How do you connect to multiple databases. 
+5.How do you manage 2 transactions independently. Suppose there are 2 transactions, 1st transaction is successful and second transaction failed. What to do here without affecting the first transaction.
+6.How do you manage DB connections in your project?
+7.Do you have idea on connection pool and how to configure and use it.
+8.There are 10 Employee objects and hashcode always returns 1. How will the objects get inserted in Hashmap.
+9. What is maven? How is it useful. What are the different cycles in Maven.
+10.Junit-> There is a method in which the input is a List and inside the method there is some processing happening on the list and then stored into DB. How do you test the list in Junit.  Ans: doAnswer
+11.What the different types of Executors.
+12. What are indexes in DB.
+
+
+25/07 (Sushant)
+----------------
+Round 2:
+1.Tell me about yourself and your previous work experience, roles and responsibilities in your previous project.
+2.What is singleton? Write code for it and how do you handle it in multi threaded environment.
+There are a million elements with A,B,C..so on as keys and 1,2,3 as values and  I want them to be sorted by their value.which collection we have to use inorder to maintain insertion order.
+3. There is a class Employee(id,name) and also having a Department object inside it. We have a department class having id and name. Write code to group employees by Deptment name and find the employee with second highest salary.
+4.How do you deploy ur project?
+5.Do you have knowledge on Kubernetes and Apache spark?
+6.How do you implement spring profiling.
+
+
+22/07 (Asked by Sayee)
+---------------------
+
+-Write Insertion sort
+Basically asked to write program to move biggest number to left until given array is sorted.
+-Given an integer array, write program to reverse them (basically sort)
+
+1.Take some random no’s and then find  duplicates  by using stream api.
+2.Write test case for this and by using mckito.
+3.If you hv .csv file or you want to generate any report how to create such  frame work for this use case.
+4.For the above use case what kind of database will you choose?
+5.From monolithic application , if you want to transform such use case what will be your thoughts and how to make such frame work..
+6.How did you process above scenario?
+7.Hw do you generate millions of records or millions of such files and strore in db?
+
+
+
+05/08 (Garud Prashant)
+----------------------
+5 teams, each team has five members, all the the members have different ratings, you need to find out one player from each team with max rating and have a match. Do it in team1 and team2 and again same thing from team3 and team4..and now winner of team 1 and 2 , and winner of team 3 and 4, will have a match, whose ratings will be better, he wins
+
+
+05/08 (Nitin Nagare)
+--------------------
+Memery management in java scenario based
+2. Spring AOP based on design pattern
+3. Spring transaction
+4. Spring Security
+5. Cache managerment in hibernate jpa
+6. Database connectivity though spring boot
+7. Spring architecture
+8. Microservice communication -> Monolithic to Microservices migration on ticket booking system
+9. Circuit breaker principle
+10.what is Service Registry?
+11.experience is ci/cd
+12.Java 8 features -> functional interface, static & default on scenario basis with multiple interface implimentation
+13.Multi level inheritance
+14.Current Project architecture
+15.Metaspace in java 8
+16.@functionalinterface -> functional interface before java 8
+17.Load balance in microservice
+
+
+
+05/08 (Rahul Vaid)
+------------------
+1. Multithreading and its impl
+2. what is thread pool
+3. What is deadlock
+4. Factory method design pattern
+5. Volatile keyword usage
+6. Future interface
+7. what is concurrentHashmap
+8. Singleton design pattern and implementation
+9. Shallow copy vs deep copy
+10. Clone() method
+11. How to compare two objects
+12. How to override equals() method if I want to sort the emp list based on salary
+13. String reverse program
+14. Program to filter the emp names who is having age > 20(Using Streams)
+15. Why spring boot
+16. Layers of a web application
+17. Annotations used in controller layer and DAO layer
+
+
+
+14/08 (Rahul Vaid)
+------------------
+1. What is Concurrency?
+2. What is fail fast and fail safe iterator?
+3. What is object level locking and Class level locking?
+4. How to prevent singleton design pattern from Serialization, Cloning, Reflection and Multi-Threading.
+5. Interthread communication between multiple threads? How do you implement it
+6. What is Deadlock situation? how to overcome those?
+7. What are available ThreadPools in java? What are those? Explain each of one where to use what
+8. Expain about Thread, Runnable and Callable? When to use what?
+9. Write a logic to print odd and even number with two seperate threads from 1 to 100 in sequential order
+10. What is Blocking Queue?
+11. What is parrell stream? When to use?
+12. What is Volatile keyword?
+13. Explain about ConcurrentHashmap?
+14. Write a code for sorting employee objects based on ename and salary?
+15. Explain about Spring AOP concepts
+16. Why Spring Boot Popular than Spring, Tell me the advantages and how it simplified the development
+17. Write a program to print 1 to 100 numbers without using any loop?
+18. Differences between Future and Completable Future?
+
+16/08 (Poonam Patel)
+--------------------
+1. MySQL queries joining two column, average of two column.
+2. @Id without @GeneratedValue it will consider the primary key or not?
+3. MySQL aggregation function we have Salary of 3 employees we need to Sum of Salary and Divide the percentage of each employee. Need MySQL query.
+4. above Query RestAPI (Controller) implementation to retrieve the each employee percentage.
+5. What is the most difficult code you written in your 7years experience and write a few lines of code.
+
+
+26/08 (Alok Das)
+-----------------
+1.Tell me about yourself
+2.find list of employee based on department and salary greater than 50k  in one out put stream api
+3.Create 3 Thread job(reading data from diffrent database) and consolidate into single how we can do 
+4.find count of employee based on department using sql
+5.Diffrent between jdbc and JPA write code
+
+27/08 (Alok Das)
+----------------
+Core Java
+=================================>
+1) equals and hashcode  contract
+2) explain it with the help of hashmap
+3) In employee class if hashcode is always returing 1 then what will be happen if I put two employee objects of same content in a hashmap-- scenario based few more questions on size of the map and key and values in the map object 
+4) thread questions like executor service, thread pooling
+5) diffrence between future and completable future and advantages disadvantages 
+6) diffrence between execute and submit and invoke all.
+7) Thread scneraio based like clubbing the outputs of ten futures
+8) Synchronization questions & Volatile keyword
+9) diffrence bewteen hashmap and concurrent hashmap and asking scenario like in which  scnerio we go with both maps -> synchronization and locking mechaninsims on both maps like that 
+10) checked exceptions and unchecked exceptions -- > this was asked while dealing with threads(Intrepted exception) and collection (concurrent modifications exception and how to avoid it)
+ 
+Java Stream Programming questions 
+=================================>
+ 
+Employee Object having department and age we need to filter the list of employee having age >30 and then group by department name
+ 
+Asking about explanantion of program that we have written  and few follow up questions
+ 
+ 
+Spring Boot 
+===========>
+1) Transaction propagation & isolation levels on backend
+2) exclude configuartion
+ 
+SQL
+========>
+ 
+1)InnerJoin on two tables having join cloumn employee and department
+ 
+2)clubb the two resultsets having the identical columns --> UNIOINS
+ 
+AWS
+============>
+ 
+1) Dynatrace monitoring , trace the request end to end
+ 
+2)Explain Cloud watch & ECS Service advantages of having these
+ 
+3) Jenkins questions like work flow --> git -> maven build -> sonarqube --> Testing--> dockerfile -> image building --> ECS service registry -> deploying images to ecs --> ecs start
+ 
+4) deoployment pattren -> blue green deployment pattren
+
+28/08 (Snehit)
+--------------
+1.	What is AtomicInteger. Why and explain with example.
+2.	How to optimize the APIs call. how you will design and explain with examples.
+3.	write a program to find the pairs with given sum in the array.
+4.	comparable and comparator program.
+5.	Person and Admin entity class. Use all the JPA annotations to create relationships.
+6.	API version Kubernetes.
+
+
+30/08 (Alok)
+-----------
+1. What happens when we override hashcode method in employee class and always return 1. How many entries would be created in the has map if we use employee object as key and try to insert elements
+2. In the above scenario what happens when the employee class is immutable
+3. How can we create a custom immutable class
+4. Few questions on threads
+5. In an array of integers fFind the number which is repeated the same number of times
+	For Example {12,12,2,2,3,5,4,4} --> Output should be 2
+6. We have employee and department table and we need to find all the employees belonging to a dept having more than 20 employees
+7. How do you implement feature flags in spring boot
